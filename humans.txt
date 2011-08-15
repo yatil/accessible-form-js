@@ -1,0 +1,29 @@
+/* TEAM */
+
+This project is maintained and hosted by WIENFLUSS information.design.solutions.
+
+	JS development & maintainance:
+	Gustav Pursche [pursche@wienfluss.net]
+	Sascha Nemecek [nemecek@wienfluss.net]
+	Location: Vienna, Austria
+
+	Idea and initial implementation:
+	Peter Minarik [@pietropizzi]
+	Location: Berlin, Germany
+
+	Accessibility testing:
+	Maria Putzhuber [putzhuber@wienfluss.net]
+	Location: Vienna, Austria
+
+	Unqualified contributions:
+	Michael Stenitzer [stenitzer@wienfluss.net]
+	Fabian Buechler [buechler@wienfluss.net]
+	Location: Vienna, Austria
+
+
+/* THANKS */
+
+Thanks to all the people who helped us to test this framework, including accessibility test with different screen readers.
+And thanks four your feedback and ideas.
+
+You can post issues and ideas at http://code.google.com/p/wienfluss-form-framework/
