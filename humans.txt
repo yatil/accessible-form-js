@@ -1,7 +1,11 @@
 /* TEAM */
 
-This project is maintained and hosted by WIENFLUSS information.design.solutions.
+This project is maintained and hosted by WIENFLUSS information.design.solutions. and forked by @yatil/outlinewebdesign.com to add HTML5 support.
 
+	HTML5 extension:
+	Eric Eggert [@yatil]
+	Location: Essen, Germany
+	
 	JS development & maintainance:
 	Gustav Pursche [pursche@wienfluss.net]
 	Sascha Nemecek [nemecek@wienfluss.net]
@@ -26,4 +30,5 @@ This project is maintained and hosted by WIENFLUSS information.design.solutions.
 Thanks to all the people who helped us to test this framework, including accessibility test with different screen readers.
 And thanks four your feedback and ideas.
 
-You can post issues and ideas at http://code.google.com/p/wienfluss-form-framework/
+You can post issues and ideas about the main framework at http://code.google.com/p/wienfluss-form-framework/
+For issues and ideas about the HTML5 integration, post at https://github.com/yatil/accessible-form-js/issues

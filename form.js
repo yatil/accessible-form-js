@@ -11,6 +11,7 @@
  * or GPL v3 (GPL-LICENSE.txt) licenses.
  * 
  * 2011-08-15: Forked by @yatil from: http://code.google.com/p/wienfluss-form-framework to add basic HTML5 features
+ * 2011-08-15: Added basic HTML5 form elements support
  */
 
 
@@ -59,7 +60,7 @@
   
 $.fn.enhanceForm = function(settings) {
 var o = $.extend({
-    FIELD_SELECTORS: 'input:text, input:password, input:file, input:radio, input:checkbox, textarea, select, fieldset.optiongroup',
+    FIELD_SELECTORS: 'input[type=search], input[type=tel], input[type=url], input[type=email], input[type=datetime], input[type=date], input[type=month], input[type=week], input[type=time], input[type=datetime-local], input[type=number], input[type=range], input[type=color], input:text, input:password, input:file, input:radio, input:checkbox, textarea, select, fieldset.optiongroup',
     VALIDATION_SELECTORS: 'input:text, input:password, input:file, input:checkbox, textarea, fieldset.optiongroup',
     BUBBLE_DELAY: 4000,
     RULES: {
@@ -200,6 +201,7 @@ var o = $.extend({
       
       // add aria-required attribute  
       form.find(o.VALIDATION_SELECTORS).filter('.required').attr('aria-required', 'true');
+      form.find(o.VALIDATION_SELECTORS).filter('[required]').attr('aria-required', 'true');
       
       // add aria-radiogroup
       form.find(o.VALIDATION_SELECTORS).filter('.radiogroup').attr('role', 'aria-radiogroup');
