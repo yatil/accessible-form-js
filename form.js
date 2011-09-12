@@ -103,6 +103,30 @@ var o = $.extend({
         },
         'radiogroup' : {
             message: 'Es muss mindestens eine Option gewählt werden'  
+        },
+        'numeric' : {
+            message: 'Der Wert des Feldes muss numerisch sein.',
+            isValid: function(val) {
+              return (val.length == 0 || val.match(/^[0-9+ ,:.\/*-]+$/));
+            }
+        },
+        'numericduty' : {
+            message: 'Der Wert des Feldes muss numerisch sein.',
+            isValid: function(val) {
+              return (val.length > 0 && val.match(/^[0-9+ ,:.\/*-]+$/));
+            }
+        },
+        'alphanumeric' : {
+            message: 'Der Wert des Feldes muss alphanumerisch sein.',
+            isValid: function(val) {
+              return (val.length == 0 || val.match(/^[a-zA-ZäöüÄÖÜß0-9+ ,.\/*-]+$/));
+            }
+        },
+        'alphabetic' : {
+            message: 'Der Wert des Feldes muss alphabetisch sein.',
+            isValid: function(val) {
+              return (val.length == 0 || val.match(/^[a-zA-ZäöüÄÖÜß+ ,.\/*-]+$/));
+            }
         }
     }
 }, settings) ;
